@@ -17,5 +17,6 @@ Vagrant.configure(2) do |config|
             v.memory = m.fetch('memory')
             v.name = "master"
         end
+        master.vm.provision "shell", path: "install-docker-kubeadm.sh"
     end
 end
