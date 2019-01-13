@@ -1,0 +1,14 @@
+master:
+  cpus: 2
+  memory: 2048
+  count: 1
+  base-address: 172.22.101.1
+worker:
+  cpus: 2
+  memory: 2048
+  count: 2
+  base-address: 172.22.101.101
+net:
+  private_nic_type: 82545EM
+  network_type: private_network
+box-name: "ubuntu/bionic64"
